@@ -7,7 +7,7 @@ const server = http.createServer(app)
 
 const io = new Server(server, {
     cors: {
-        origin: ['http://localhost:2020']
+        origin: ['http://tg-puce-six.vercel.app']
     }
 })
 export function getReceiverSocketId(userId) {
