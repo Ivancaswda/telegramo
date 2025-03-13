@@ -164,7 +164,7 @@ export const useAuthStore = create((setState, getState) => ({
             return;
         }
 
-        const socket = io('http://localhost:1120', {
+        const socket = io('https://telegrambackend-sand.vercel.app', {
             query: {
                 userId: authUser._id
             }
